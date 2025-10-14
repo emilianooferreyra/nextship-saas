@@ -119,13 +119,13 @@
       "seo": [
         "Implementación de Metadata API",
         "Tags Open Graph",
-        "Soporte para Twitter Card",
+        "Soporte para X Card",
         "Generación de sitemap",
         "Configuración de robots.txt",
         "Markup de datos estructurados"
       ],
       "email": [
-        "Integración con Mailgun",
+        "Integración con Resend y React Email",
         "Templates de emails transaccionales",
         "Verificación de email",
         "Emails de recuperación de contraseña",
@@ -210,9 +210,9 @@
         "name": "Lucide Icons",
         "description": "Librería de iconos limpia y consistente"
       },
-      "mailgun": {
-        "name": "Mailgun",
-        "description": "Entrega confiable de emails transaccionales"
+      "resend": {
+        "name": "Resend",
+        "description": "API moderna de email con templates React Email"
       },
       "eslint": {
         "name": "ESLint",
@@ -281,15 +281,16 @@
     ],
     "bottomCta": {
       "question": "¿Preguntas sobre precios?",
-      "twitter": "Enviame un DM en Twitter",
+      "twitter": "Enviame un DM en X",
       "or": "o",
       "email": "enviame un email"
     }
   },
   "faq": {
+    "badge": "Centro de Ayuda",
     "heading": "Preguntas Frecuentes",
     "subheading": "Todo lo que necesitás saber sobre NextShip. ¿No encontrás lo que buscás?",
-    "twitter": "Enviame un DM en Twitter",
+    "twitter": "Enviame un DM en X",
     "or": "o",
     "email": "enviame un email",
     "items": [
@@ -303,7 +304,7 @@
       },
       {
         "question": "¿Qué incluye?",
-        "answer": "Autenticación (Supabase), procesamiento de pagos (Stripe/LemonSqueezy), seguridad empresarial (Arcjet), base de datos (PostgreSQL con Drizzle ORM), integración de email (Mailgun), UI moderna (shadcn/ui) y mucho más. Revisá la sección de Características para la lista completa."
+        "answer": "Autenticación (Supabase), procesamiento de pagos (Stripe/LemonSqueezy), seguridad empresarial (Arcjet), base de datos (PostgreSQL con Drizzle ORM), integración de email (Resend), UI moderna (shadcn/ui) y mucho más. Revisá la sección de Características para la lista completa."
       },
       {
         "question": "¿Necesito experiencia programando?",
@@ -363,7 +364,7 @@
     "connect": {
       "title": "Conectar",
       "github": "GitHub",
-      "twitter": "Twitter",
+      "twitter": "X",
       "email": "Email"
     },
     "newsletter": {

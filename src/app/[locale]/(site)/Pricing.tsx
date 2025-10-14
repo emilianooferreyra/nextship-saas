@@ -165,66 +165,6 @@ export default function PricingSection() {
             </div>
           </motion.div>
         </div>
-
-        {/* FAQ Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-20 max-w-3xl mx-auto"
-        >
-          <h3 className="text-2xl font-bold text-center mb-8">
-            {t("faqTitle")}
-          </h3>
-          <div className="space-y-6">
-            {(
-              t.raw("faqItems") as Array<{ question: string; answer: string }>
-            ).map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.7 + index * 0.1 }}
-                className="bg-card border border-border rounded-xl p-6"
-              >
-                <h4 className="font-semibold mb-2 flex items-center gap-2">
-                  <Check className="w-5 h-5 text-primary" />
-                  {item.question}
-                </h4>
-                <p className="text-muted-foreground text-sm ml-7">
-                  {item.answer}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="mt-16 text-center"
-        >
-          <p className="text-muted-foreground mb-4">
-            {t("bottomCta.question")}{" "}
-            <Link
-              href="https://twitter.com/emilianooferreyra"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              {t("bottomCta.twitter")}
-            </Link>{" "}
-            {t("bottomCta.or")}{" "}
-            <Link
-              href="mailto:contact@example.com"
-              className="text-primary hover:underline"
-            >
-              {t("bottomCta.email")}
-            </Link>
-          </p>
-        </motion.div>
       </div>
     </div>
   );

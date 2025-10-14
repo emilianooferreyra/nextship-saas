@@ -40,6 +40,12 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-8 md:flex">
           <Link
+            href="#tech-stack"
+            className="text-base text-muted-foreground transition hover:text-foreground"
+          >
+            {t("techStack")}
+          </Link>
+          <Link
             href="#pricing"
             className="text-base text-muted-foreground transition hover:text-foreground"
           >
@@ -50,12 +56,6 @@ export default function Navbar() {
             className="text-base text-muted-foreground transition hover:text-foreground"
           >
             {t("faq")}
-          </Link>
-          <Link
-            href="#tech-stack"
-            className="text-base text-muted-foreground transition hover:text-foreground"
-          >
-            {t("techStack")}
           </Link>
         </div>
 

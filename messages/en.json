@@ -119,13 +119,13 @@
       "seo": [
         "Metadata API implementation",
         "Open Graph tags",
-        "Twitter Card support",
+        "X Card support",
         "Sitemap generation",
         "Robots.txt configuration",
         "Structured data markup"
       ],
       "email": [
-        "Mailgun integration",
+        "Resend integration with React Email",
         "Transactional email templates",
         "Email verification",
         "Password reset emails",
@@ -210,9 +210,9 @@
         "name": "Lucide Icons",
         "description": "Clean, consistent icon library"
       },
-      "mailgun": {
-        "name": "Mailgun",
-        "description": "Reliable transactional email delivery"
+      "resend": {
+        "name": "Resend",
+        "description": "Modern email API with React Email templates"
       },
       "eslint": {
         "name": "ESLint",
@@ -281,15 +281,16 @@
     ],
     "bottomCta": {
       "question": "Questions about pricing?",
-      "twitter": "DM me on Twitter",
+      "twitter": "DM me on X",
       "or": "or",
       "email": "send an email"
     }
   },
   "faq": {
+    "badge": "Help Center",
     "heading": "Frequently Asked Questions",
     "subheading": "Everything you need to know about NextShip. Can't find what you're looking for?",
-    "twitter": "DM me on Twitter",
+    "twitter": "DM me on X",
     "or": "or",
     "email": "send an email",
     "items": [
@@ -303,7 +304,7 @@
       },
       {
         "question": "What's included?",
-        "answer": "Authentication (Supabase), payment processing (Stripe/LemonSqueezy), enterprise security (Arcjet), database (PostgreSQL with Drizzle ORM), email integration (Mailgun), modern UI (shadcn/ui), and much more. Check the Features section for the complete list."
+        "answer": "Authentication (Supabase), payment processing (Stripe/LemonSqueezy), enterprise security (Arcjet), database (PostgreSQL with Drizzle ORM), email integration (Resend), modern UI (shadcn/ui), and much more. Check the Features section for the complete list."
       },
       {
         "question": "Do I need coding experience?",
@@ -363,7 +364,7 @@
     "connect": {
       "title": "Connect",
       "github": "GitHub",
-      "twitter": "Twitter",
+      "twitter": "X",
       "email": "Email"
     },
     "newsletter": {

@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import { HelpCircle, Mail } from "lucide-react";
+import XIcon from "@/components/icons/XIcon";
 
 interface FAQItem {
   question: string;
@@ -12,6 +15,8 @@ interface FAQItem {
 export default function FAQ() {
   const t = useTranslations("faq");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const toggleQuestion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -21,32 +26,50 @@ export default function FAQ() {
 
   return (
     <div
+      ref={ref}
       id="faq"
-      className="min-h-screen bg-background px-4 py-12 md:px-6 lg:px-8"
+      className="min-h-screen bg-background px-4 py-12 md:px-6 lg:px-8 scroll-mt-8"
     >
       <div className="mx-auto max-w-3xl">
-        <h2 className="mb-4 text-center text-4xl font-bold text-foreground">
-          {t("heading")}
-        </h2>
-        <p className="mb-12 text-center text-base text-muted-foreground">
-          {t("subheading")}{" "}
-          <Link
-            href="https://twitter.com/emilianooferreyra"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.5, type: "spring" }}
+            className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4"
           >
-            {t("twitter")}
-          </Link>{" "}
-          {t("or")}{" "}
-          <Link
-            href="mailto:contact@example.com"
-            className="text-primary hover:underline"
-          >
-            {t("email")}
-          </Link>
-          .
-        </p>
+            <HelpCircle className="w-4 h-4" />
+            {t("badge")}
+          </motion.div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            {t("heading")}
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            {t("subheading")}{" "}
+            <Link
+              href="https://x.com/disaamood"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline inline-flex items-center gap-1"
+            >
+              <XIcon className="w-5 h-5" size={16} />
+            </Link>{" "}
+            {t("or")}{" "}
+            <Link
+              href="mailto:contact@example.com"
+              className="text-primary hover:underline inline-flex items-center gap-1"
+            >
+              <Mail className="w-5 h-5" />
+            </Link>
+            .
+          </p>
+        </motion.div>
 
         <div className="space-y-[2px]">
           {faqs.map((faq, index) => (

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Twitter, Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
+import XIcon from "@/components/icons/XIcon";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -118,7 +119,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="https://github.com/yourusername"
+                  href="https://github.com/emilianooferreyra/nextship-saas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
@@ -129,12 +130,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/disaamood"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
-                  <Twitter className="w-4 h-4" />
+                  <XIcon className="w-4 h-4" size={16} />
                   {t("connect.twitter")}
                 </Link>
               </li>
