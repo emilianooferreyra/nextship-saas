@@ -1,16 +1,20 @@
-# ⚡ NextShip
+# ⚡ NextShip SaaS
 
 Hi there! 👋
 
-NextShip is a free, designed to simplify and optimize your shipping process. It’s built using modern web technologies like Next.js, Supabase, Stripe, LemonSqueezy, Drizzle ORM and Mailgun.
+NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to accelerate your SaaS development. Built with cutting-edge technologies including Next.js 15, Supabase, Stripe, LemonSqueezy, Arcjet security, and full internationalization support.
 
-## Features
+## ✨ Features
 
-- SEO Optimisation
-- User authentication with Supabase
-- Stripe and LemonSqueezy integration
-- Email notifications via Mailgun
-- Modern UI built with Next.js and TailwindCSS
+- 🌐 **Internationalization**: Full i18n support (English, Spanish, Portuguese)
+- 🎛️ **Advanced Dashboard**: Modern UI with comprehensive components  
+- 🔒 **Enhanced Security**: Arcjet integration and secure authentication
+- 🐳 **Docker Ready**: Complete dev/prod Docker configuration
+- 💳 **Payment Processing**: Stripe and LemonSqueezy integration
+- 🎨 **Modern UI**: Tailwind CSS with Radix UI components
+- 📧 **Email Integration**: Mailgun for transactional emails
+- 📱 **Responsive Design**: Mobile-first approach
+- 🚀 **Performance Optimized**: Next.js 15 with modern practices
 
 ## Docker Setup
 
@@ -125,4 +129,4 @@ For people who want to contribute, please refer to [CONTRIBUTING.md](CONTRIBUTIN
 
 ---
 
-Cooked for you with ❤️ by [x](https://google.com)
+Built with ❤️ by [emilianooferreyra](https://github.com/emilianooferreyra)
