@@ -1,0 +1,21 @@
+services:
+  app:
+    image: YOUR_REGISTRY/YOUR_IMAGE:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - HUSKY=0
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+volumes:
+  portainer_data:

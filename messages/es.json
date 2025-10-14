@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "title": "NextShip - Starter Next.js SaaS con Stripe y Supabase",
+    "description": "Starter Next.js listo para producción con autenticación, pagos y seguridad empresarial. Licencia MIT."
+  },
+  "hero": {
+    "brandName": "NextShip",
+    "title": "Deja de hacer boilerplate,",
+    "titleHighlight": "empezá a crear funcionalidades",
+    "description": "Starter Next.js listo para producción con autenticación Supabase, pagos Stripe y seguridad empresarial. Todo lo que necesitás para lanzar tu SaaS, nada que no necesites.",
+    "getStarted": "Empezar",
+    "exploreFeatures": "Ver Características",
+    "mitLicensed": "Licencia MIT",
+    "productionReady": "Listo para Producción",
+    "enterpriseSecurity": "Seguridad Empresarial",
+    "stack": {
+      "nextjs": {
+        "title": "Next.js 15",
+        "subtitle": "App Router y Server Components"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "subtitle": "Desarrollo type-safe"
+      },
+      "supabaseStripe": {
+        "title": "Supabase y Stripe",
+        "subtitle": "Auth y Pagos listos"
+      },
+      "arcjet": {
+        "title": "Seguridad Arcjet",
+        "subtitle": "Protección nivel empresarial"
+      }
+    }
+  },
+  "navbar": {
+    "brandName": "NextShip",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "techStack": "Stack Técnico",
+    "starOnGitHub": "Estrella en GitHub",
+    "toggleMenu": "Alternar menú",
+    "docs": "Docs"
+  },
+  "features": {
+    "badge": "Características",
+    "heading": "Todo lo que necesitás para lanzar tu SaaS",
+    "description": "Dejá de perder semanas configurando. NextShip incluye autenticación, pagos, seguridad y UI moderna desde el inicio.",
+    "tabs": {
+      "security": "Seguridad",
+      "payments": "Pagos",
+      "authentication": "Autenticación",
+      "database": "Base de Datos",
+      "performance": "Performance",
+      "uiux": "UI/UX",
+      "seo": "SEO y Marketing",
+      "email": "Email"
+    },
+    "titles": {
+      "enterpriseSecurity": "Seguridad de Nivel Empresarial",
+      "paymentProcessing": "Procesamiento de Pagos",
+      "supabaseAuth": "Autenticación Supabase",
+      "databaseOrm": "Base de Datos y ORM",
+      "nextjsReact": "Next.js 15 y React 19",
+      "modernDesign": "Sistema de Diseño Moderno",
+      "seoMarketing": "Herramientas SEO y Marketing",
+      "emailIntegration": "Integración de Email"
+    },
+    "timeSaved": "Tiempo ahorrado",
+    "timeSavedTemplate": "{hours}h ahorradas",
+    "lists": {
+      "security": [
+        "Rate limiting y protección contra bots con Arcjet",
+        "Protección CSRF con patrón Double Submit Cookie",
+        "Headers seguros (CSP, HSTS, X-Frame-Options)",
+        "Validación de entrada con schemas Zod",
+        "Validación de variables de entorno",
+        "Protección contra SQL injection con Drizzle ORM"
+      ],
+      "payments": [
+        "Integración Stripe con manejo de webhooks",
+        "Soporte LemonSqueezy para pagos simplificados",
+        "Gestión de suscripciones",
+        "Verificación de firma de webhooks",
+        "Seguimiento de estado de pagos",
+        "Generación automática de facturas"
+      ],
+      "authentication": [
+        "Autenticación con email/contraseña",
+        "Autenticación con magic link",
+        "Proveedores OAuth (Google, GitHub, etc.)",
+        "Rutas protegidas con middleware",
+        "Gestión de sesiones",
+        "Flujo de verificación de email"
+      ],
+      "database": [
+        "PostgreSQL con Supabase",
+        "Drizzle ORM para queries type-safe",
+        "Migraciones de base de datos",
+        "Row Level Security (RLS)",
+        "Suscripciones en tiempo real",
+        "Indexación optimizada"
+      ],
+      "performance": [
+        "Server Components por defecto",
+        "Actualizaciones optimistas de UI",
+        "Optimización de imágenes",
+        "Optimización de fuentes",
+        "Optimización de tamaño de bundle",
+        "Soporte para edge runtime"
+      ],
+      "uiux": [
+        "Librería de componentes shadcn/ui",
+        "Tailwind CSS para estilos",
+        "Soporte para modo oscuro",
+        "Diseño responsive",
+        "Componentes accesibles",
+        "Iconos Lucide"
+      ],
+      "seo": [
+        "Implementación de Metadata API",
+        "Tags Open Graph",
+        "Soporte para Twitter Card",
+        "Generación de sitemap",
+        "Configuración de robots.txt",
+        "Markup de datos estructurados"
+      ],
+      "email": [
+        "Integración con Mailgun",
+        "Templates de emails transaccionales",
+        "Verificación de email",
+        "Emails de recuperación de contraseña",
+        "Emails de bienvenida",
+        "Soporte para newsletter"
+      ]
+    },
+    "bottom": {
+      "totalTimeSaved": "Tiempo total ahorrado: más de 200 horas",
+      "typescript": "100% TypeScript",
+      "eslint": "ESLint configurado",
+      "productionReady": "Listo para producción",
+      "mitLicensed": "Licencia MIT"
+    }
+  },
+  "techStack": {
+    "badge": "Stack Técnico",
+    "heading": "Construido con tecnologías modernas y probadas",
+    "description": "Cada herramienta en NextShip fue seleccionada cuidadosamente por su confiabilidad, experiencia de desarrollo y preparación para producción.",
+    "categories": {
+      "framework": "Framework",
+      "databaseAuth": "Base de Datos y Auth",
+      "payments": "Pagos",
+      "security": "Seguridad",
+      "uiStyling": "UI y Estilos",
+      "toolsUtils": "Herramientas y Utilidades"
+    },
+    "technologies": {
+      "nextjs": {
+        "name": "Next.js 15",
+        "description": "Framework React con App Router, Server Components y Server Actions"
+      },
+      "react": {
+        "name": "React 19",
+        "description": "La última versión de React con mejor rendimiento y experiencia de desarrollo"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "Desarrollo type-safe con soporte completo de IDE"
+      },
+      "supabase": {
+        "name": "Supabase",
+        "description": "Alternativa open source a Firebase con PostgreSQL, Auth y Storage"
+      },
+      "drizzle": {
+        "name": "Drizzle ORM",
+        "description": "ORM TypeScript con excelente DX y migraciones automáticas"
+      },
+      "postgresql": {
+        "name": "PostgreSQL",
+        "description": "Base de datos relacional open-source confiable y poderosa"
+      },
+      "stripe": {
+        "name": "Stripe",
+        "description": "Procesamiento de pagos completo con suscripciones y webhooks"
+      },
+      "lemonsqueezy": {
+        "name": "LemonSqueezy",
+        "description": "Procesamiento de pagos simple con manejo de impuestos incluido"
+      },
+      "arcjet": {
+        "name": "Arcjet",
+        "description": "Rate limiting, protección contra bots y capa de seguridad"
+      },
+      "csrfProtection": {
+        "name": "Protección CSRF",
+        "description": "Patrón Double Submit Cookie para formularios seguros"
+      },
+      "zod": {
+        "name": "Zod",
+        "description": "Validación de schemas TypeScript-first con inferencia de tipos"
+      },
+      "tailwind": {
+        "name": "Tailwind CSS",
+        "description": "Framework CSS utility-first para desarrollo rápido de UI"
+      },
+      "shadcn": {
+        "name": "shadcn/ui",
+        "description": "Librería de componentes bellamente diseñada y accesible"
+      },
+      "lucide": {
+        "name": "Lucide Icons",
+        "description": "Librería de iconos limpia y consistente"
+      },
+      "mailgun": {
+        "name": "Mailgun",
+        "description": "Entrega confiable de emails transaccionales"
+      },
+      "eslint": {
+        "name": "ESLint",
+        "description": "Aplicación de calidad y consistencia de código"
+      },
+      "pnpm": {
+        "name": "pnpm",
+        "description": "Gestor de paquetes rápido y eficiente en espacio de disco"
+      }
+    },
+    "bottom": {
+      "preConfigured": "Todo preconfigurado y listo para usar"
+    }
+  },
+  "pricing": {
+    "badge": "Precios",
+    "heading": "Empezá a construir hoy",
+    "description": "Obtené acceso de por vida a NextShip y todas las actualizaciones futuras.",
+    "free": {
+      "title": "Gratis para Siempre",
+      "subtitle": "Perfecto para aprender y proyectos personales",
+      "price": "$0",
+      "period": "para siempre",
+      "features": [
+        "Código fuente completo",
+        "Licencia MIT - usalo comercialmente",
+        "Todas las características incluidas",
+        "Soporte de la comunidad",
+        "Actualizaciones regulares",
+        "Acceso a documentación"
+      ],
+      "button": "Empezar Gratis"
+    },
+    "support": {
+      "title": "Soporte Prioritario",
+      "description": "Obtené ayuda cuando la necesites con acceso directo al creador",
+      "benefits": [
+        "Soporte directo por email",
+        "Corrección prioritaria de bugs",
+        "Prioridad en pedidos de funcionalidades",
+        "Guía de implementación",
+        "Consultoría de arquitectura",
+        "Asistencia en revisión de código"
+      ],
+      "button": "Obtener Soporte",
+      "from": "desde $99"
+    },
+    "faqTitle": "Preguntas sobre Precios",
+    "faqItems": [
+      {
+        "question": "¿Es realmente gratis?",
+        "answer": "¡Sí! NextShip tiene licencia MIT y es completamente gratis de usar, incluso para proyectos comerciales. Obtenés el código fuente completo y podés modificarlo como quieras."
+      },
+      {
+        "question": "¿Qué incluye el Soporte Prioritario?",
+        "answer": "Acceso directo al creador vía email, respuestas prioritarias a reportes de bugs y pedidos de funcionalidades, ayuda con implementación y orientación general sobre la construcción de tu SaaS."
+      },
+      {
+        "question": "¿Puedo usarlo para proyectos de clientes?",
+        "answer": "¡Absolutamente! La licencia MIT te permite usar NextShip para cualquier propósito, incluyendo trabajo comercial para clientes y tus propios productos."
+      },
+      {
+        "question": "¿Tengo que pagar por las actualizaciones?",
+        "answer": "No, todas las actualizaciones son gratis para siempre. Cuando clonás el repo, obtenés acceso a todas las mejoras y funcionalidades futuras sin costo."
+      }
+    ],
+    "bottomCta": {
+      "question": "¿Preguntas sobre precios?",
+      "twitter": "Enviame un DM en Twitter",
+      "or": "o",
+      "email": "enviame un email"
+    }
+  },
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "subheading": "Todo lo que necesitás saber sobre NextShip. ¿No encontrás lo que buscás?",
+    "twitter": "Enviame un DM en Twitter",
+    "or": "o",
+    "email": "enviame un email",
+    "items": [
+      {
+        "question": "¿Qué es NextShip?",
+        "answer": "NextShip es un template starter Next.js listo para producción que incluye autenticación, pagos, seguridad y todas las funcionalidades esenciales que necesitás para lanzar un SaaS. Tiene licencia MIT y es gratis de usar."
+      },
+      {
+        "question": "¿Es realmente gratis?",
+        "answer": "¡Sí! NextShip es completamente gratis y open source bajo la licencia MIT. Podés usarlo para proyectos personales, productos comerciales y trabajos para clientes sin ninguna restricción."
+      },
+      {
+        "question": "¿Qué incluye?",
+        "answer": "Autenticación (Supabase), procesamiento de pagos (Stripe/LemonSqueezy), seguridad empresarial (Arcjet), base de datos (PostgreSQL con Drizzle ORM), integración de email (Mailgun), UI moderna (shadcn/ui) y mucho más. Revisá la sección de Características para la lista completa."
+      },
+      {
+        "question": "¿Necesito experiencia programando?",
+        "answer": "Deberías estar cómodo con React y Next.js. NextShip es un template starter, no una solución no-code. Te ahorra tiempo de configuración pero asume que sabés cómo construir funcionalidades."
+      },
+      {
+        "question": "¿Cuáles son los costos de los servicios?",
+        "answer": "La mayoría de los servicios tienen tiers gratuitos generosos: Supabase (tier gratuito disponible), Stripe (pagás por transacción), Arcjet (tier gratuito), Vercel (gratis para proyectos personales). Podés empezar con $0/mes y escalar a medida que crecés."
+      },
+      {
+        "question": "¿Puedo personalizarlo?",
+        "answer": "¡Absolutamente! Obtenés el código fuente completo y podés modificar cualquier cosa. Eliminá funcionalidades que no necesitás, agregá nuevas, cambiá el diseño - es tuyo para personalizar."
+      },
+      {
+        "question": "¿Cómo obtengo actualizaciones?",
+        "answer": "NextShip es un template starter, así que lo clonás una vez y sos dueño de tu copia. Podés traer actualizaciones del repo si querés, pero tu proyecto se vuelve independiente después de clonarlo."
+      },
+      {
+        "question": "¿Está listo para producción?",
+        "answer": "¡Sí! NextShip incluye seguridad de nivel empresarial, manejo de errores y mejores prácticas. Muchos desarrolladores han lanzado productos con él. Sin embargo, deberías seguir probando exhaustivamente y revisar el código para tus necesidades específicas."
+      },
+      {
+        "question": "¿Qué proveedores de pago están soportados?",
+        "answer": "Tanto Stripe como LemonSqueezy están preconfigurados. Stripe es mejor para empresas con sede en EE.UU. con necesidades complejas. LemonSqueezy es más fácil de configurar y maneja impuestos globales automáticamente."
+      },
+      {
+        "question": "¿Ofrecés soporte?",
+        "answer": "El soporte de la comunidad está disponible a través de las discusiones de GitHub. El soporte prioritario con acceso directo al creador está disponible como complemento pago."
+      }
+    ]
+  },
+  "cta": {
+    "badge": "¿Listo para lanzar?",
+    "heading": "Empezá a construir tu SaaS hoy",
+    "description": "Cloná el repo y lanzá tu producto en días, no meses. Todo está configurado y listo para usar.",
+    "getStarted": "Empezar Gratis",
+    "viewPricing": "Ver Precios"
+  },
+  "footer": {
+    "brandName": "NextShip",
+    "tagline": "Starter Next.js listo para producción para desarrolladores ambiciosos",
+    "copyright": "Todos los derechos reservados",
+    "product": {
+      "title": "Producto",
+      "features": "Características",
+      "pricing": "Precios",
+      "faq": "Preguntas",
+      "documentation": "Documentación",
+      "techStack": "Stack Técnico"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad",
+      "licenses": "Licencias"
+    },
+    "connect": {
+      "title": "Conectar",
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "email": "Email"
+    },
+    "newsletter": {
+      "title": "Mantenete Actualizado",
+      "description": "Recibí notificaciones sobre nuevas funcionalidades y actualizaciones",
+      "placeholder": "Ingresá tu email",
+      "subscribe": "Suscribirse"
+    },
+    "bottom": {
+      "copyright": "© 2025 NextShip. Todos los derechos reservados.",
+      "builtWith": "Construido con ♥️"
+    }
+  }
+}

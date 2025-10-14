@@ -1,0 +1,42 @@
+services:
+  app:
+    image: YOUR_REGISTRY/YOUR_IMAGE:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://YOUR_MONGO_USER:YOUR_MONGO_PASSWORD@mongodb:27017/YOUR_DB_NAME?authSource=admin
+      - HUSKY=0
+    restart: unless-stopped
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  mongodb:
+    image: mongo:8
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=YOUR_MONGO_USER
+      - MONGO_INITDB_ROOT_PASSWORD=YOUR_MONGO_PASSWORD
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: mongosh --eval "db.adminCommand('ping')"
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
+  portainer_data:

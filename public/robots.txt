@@ -1,0 +1,15 @@
+# Robots.txt for NextShip
+# Replace YOUR_DOMAIN.com with your actual domain
+
+User-agent: *
+
+# Block private/authenticated routes
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /auth/
+
+# Allow public pages
+Allow: /
+
+# Sitemap
+Sitemap: https://YOUR_DOMAIN.com/sitemap.xml
