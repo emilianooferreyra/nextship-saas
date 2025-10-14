@@ -34,28 +34,33 @@ NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to acceler
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/yourusername/nextship-saas.git
+   git clone https://github.com/emilianooferreyra/nextship-saas.git
    cd nextship-saas
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    ```
 
    Update `.env` with your credentials:
+
    - Supabase (Auth & Database)
    - Stripe (Payments)
    - Resend (Email)
    - Arcjet (Security)
 
 4. **Run development server**
+
    ```bash
    pnpm dev
    ```
@@ -93,6 +98,7 @@ NextShip uses [Resend](https://resend.com) with React Email for beautiful, respo
    RESEND_API_KEY=re_xxx
    ```
 3. **Use pre-built templates**
+
    ```typescript
    import { sendEmail } from "@/lib/resend";
    import { WelcomeEmail } from "@/emails";
@@ -105,6 +111,7 @@ NextShip uses [Resend](https://resend.com) with React Email for beautiful, respo
    ```
 
 **Available templates:**
+
 - `WelcomeEmail` - New user welcome
 - `ResetPasswordEmail` - Password reset flow
 - `NotificationEmail` - General notifications
@@ -172,11 +179,13 @@ In development, the project runs in **watch mode** with automatic rebuilds.
 #### Commands for Development
 
 1. **Base Setup** (without a database):
+
    ```bash
    docker-compose -f docker/dev/docker-compose.yml up --build
    ```
 
 2. **With PostgreSQL**:
+
    ```bash
    docker-compose -f docker/dev/docker-compose.yml -f docker/dev/docker-compose.postgres.yml up --build
    ```
@@ -193,11 +202,13 @@ The production environment is optimized for performance and security.
 #### Commands for Production
 
 1. **Base Setup** (without a database):
+
    ```bash
    docker-compose -f docker/prod/docker-compose.yml up --build -d
    ```
 
 2. **With PostgreSQL**:
+
    ```bash
    docker-compose -f docker/prod/docker-compose.yml -f docker/prod/docker-compose.postgres.yml up --build -d
    ```
@@ -249,6 +260,7 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 Built with ❤️ by [emilianooferreyra](https://github.com/emilianooferreyra)
 
 Based on [ShipFree](https://github.com/shipfree/shipfree) template with significant improvements:
+
 - ✨ Resend + React Email integration
 - 🧪 Complete testing setup with Vitest
 - 🔒 Enhanced security features
