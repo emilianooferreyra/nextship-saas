@@ -1,7 +1,21 @@
 import { NextResponse } from "next/server";
-import { stripe } from "@/utils/stripe";
+import { getStripeServer } from "@/utils/stripe";
 
 export async function POST(req: Request) {
+  const stripe = getStripeServer();
+
+  if (!stripe) {
+    return NextResponse.json(
+      {
+        error: {
+          message:
+            "Stripe is not configured. Please add STRIPE_SECRET_KEY to environment variables.",
+        },
+      },
+      { status: 503 }
+    );
+  }
+
   const { priceId } = await req.json();
 
   try {
