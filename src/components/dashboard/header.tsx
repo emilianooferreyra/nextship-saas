@@ -1,11 +1,11 @@
 "use client";
 
 import { Bell, Menu, Search } from "lucide-react";
+import { MobileSidebar } from "@/components/dashboard/mobile-sidebar";
+import { UserNav } from "@/components/dashboard/user-nav";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { UserNav } from "@/components/dashboard/user-nav";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { MobileSidebar } from "@/components/dashboard/mobile-sidebar";
 
 export function DashboardHeader() {
   return (

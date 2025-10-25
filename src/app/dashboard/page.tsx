@@ -1,9 +1,9 @@
-import { createClient } from "@/lib/supabase/server";
-import { StatsCard } from "@/components/dashboard/stats-card";
+import { CreditCard, DollarSign, TrendingUp, Users } from "lucide-react";
 import { OverviewChart } from "@/components/dashboard/overview-chart";
 import { RecentActivity } from "@/components/dashboard/recent-activity";
-import { DollarSign, Users, CreditCard, TrendingUp } from "lucide-react";
+import { StatsCard } from "@/components/dashboard/stats-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function Dashboard() {
   const supabase = await createClient();

@@ -32,7 +32,10 @@ export function OverviewChart() {
             {data.map((item) => {
               const heightPercent = (item.value / maxValue) * 100;
               return (
-                <div key={item.name} className="flex flex-col items-center flex-1 h-full justify-end">
+                <div
+                  key={item.name}
+                  className="flex flex-col items-center flex-1 h-full justify-end"
+                >
                   <div className="w-full relative group flex flex-col justify-end h-full">
                     <div
                       className="w-full bg-primary rounded-t-sm hover:opacity-80 transition-opacity cursor-pointer"

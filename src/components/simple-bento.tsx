@@ -1,14 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Shield,
-  CreditCard,
-  Lock,
-  Database,
-  Zap,
-  Mail,
-} from "lucide-react";
+import { CreditCard, Database, Lock, Mail, Shield, Zap } from "lucide-react";
 
 const features = [
   { icon: Shield, label: "Security", color: "text-red-400" },

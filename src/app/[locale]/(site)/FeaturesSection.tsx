@@ -1,20 +1,20 @@
 "use client";
 
-import {
-  Shield,
-  CreditCard,
-  Lock,
-  Database,
-  Zap,
-  Paintbrush,
-  Globe,
-  Mail,
-  Check,
-} from "lucide-react";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { useTranslations } from "next-intl";
 import { motion, useInView } from "framer-motion";
+import {
+  Check,
+  CreditCard,
+  Database,
+  Globe,
+  Lock,
+  Mail,
+  Paintbrush,
+  Shield,
+  Zap,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useRef } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function FeaturesSection() {
   const t = useTranslations("features");

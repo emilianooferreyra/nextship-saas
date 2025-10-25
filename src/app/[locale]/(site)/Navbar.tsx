@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { X } from "lucide-react";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
 
 export default function Navbar() {
   const t = useTranslations("navbar");

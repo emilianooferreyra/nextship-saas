@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
@@ -8,11 +8,7 @@ const inter = Inter({
   display: "swap",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={cn(inter.className, "antialiased")}>{children}</body>

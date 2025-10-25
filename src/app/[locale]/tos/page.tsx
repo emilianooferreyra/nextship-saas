@@ -1,17 +1,13 @@
-import Link from "next/link";
-import { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service - NextShip",
   description: "Terms of Service for NextShip",
 };
 
-const TOS = async ({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) => {
+const TOS = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
 
   return (

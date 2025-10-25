@@ -25,16 +25,10 @@ export async function POST(req: NextRequest) {
       }
 
       if (decision.reason.isBot()) {
-        return NextResponse.json(
-          { error: "Bot detected" },
-          { status: 403 }
-        );
+        return NextResponse.json({ error: "Bot detected" }, { status: 403 });
       }
 
-      return NextResponse.json(
-        { error: "Request blocked" },
-        { status: 403 }
-      );
+      return NextResponse.json({ error: "Request blocked" }, { status: 403 });
     }
 
     // Validate email with Arcjet

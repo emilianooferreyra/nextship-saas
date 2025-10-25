@@ -7,6 +7,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2025-10-25
+
+### Added
+
+- ⚡ **Biome integration** - Ultra-fast linter and formatter
+  - Replaces ESLint + Prettier with single tool (10-100x faster)
+  - New commands: `pnpm check`, `pnpm check:fix`, `pnpm lint:fix`
+  - Automatic import organization
+  - Configuration in `biome.json`
+
+### Changed
+
+- 🚀 **Next.js 15.5.4 → 16.0.0** - Major version upgrade
+  - Turbopack enabled by default
+  - Updated `next.config.ts` for React Compiler compatibility
+  - Moved `experimental.reactCompiler` to root level
+- 📦 **Major dependency updates**:
+  - @stripe/stripe-js: 5.6.0 → 8.1.0
+  - @supabase/supabase-js: 2.48.1 → 2.76.1
+  - drizzle-orm: 0.39.3 → 0.44.7
+  - framer-motion: 12.0.9 → 12.23.24
+  - lucide-react: 0.474.0 → 0.548.0
+  - stripe: 17.6.0 → 19.1.0
+  - axios: 1.7.9 → 1.12.2
+  - next-intl: 4.3.12 → 4.4.0
+- 🔧 **Dev dependency updates**:
+  - @types/node: 20.17.16 → 24.9.1
+  - typescript: 5.7.3 → 5.9.3
+  - vitest: 3.2.4 → 4.0.3
+- 📝 Updated package.json scripts for Biome
+
+### Removed
+
+- ❌ **ESLint** - Replaced with Biome
+  - Removed `eslint` package
+  - Removed `eslint-config-next` package
+  - Removed `@eslint/eslintrc` package
+  - Removed `eslint.config.mjs`
+- ❌ **Prettier** - Replaced with Biome
+  - Removed `prettier` package
+  - Removed `.prettierrc` and `.prettierignore`
+
 ## [0.2.0] - 2025-01-14
 
 ### Added
@@ -128,6 +170,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
+- **v0.4.0** (2025-10-25) - Next.js 16, Biome migration, major dependency updates
 - **v0.2.0** (2025-01-14) - Resend migration, testing setup, code cleanup
 - **v0.1.0** (2025-01-10) - Initial release based on ShipFree template
 

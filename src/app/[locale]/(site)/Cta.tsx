@@ -1,8 +1,8 @@
 "use client";
 
-import { Github, ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { ArrowRight, Github } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function CTA() {
   const t = useTranslations("cta");

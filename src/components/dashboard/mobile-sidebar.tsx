@@ -1,17 +1,17 @@
 "use client";
 
+import {
+  BarChart3,
+  CreditCard,
+  FileText,
+  LayoutDashboard,
+  Settings,
+  Users,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
-import {
-  LayoutDashboard,
-  CreditCard,
-  Users,
-  Settings,
-  FileText,
-  BarChart3,
-} from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 const navItems = [
   {
@@ -61,7 +61,11 @@ export function MobileSidebar() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M16 3L30 29H2L16 3Z" fill="currentColor" className="text-primary" />
+            <path
+              d="M16 3L30 29H2L16 3Z"
+              fill="currentColor"
+              className="text-primary"
+            />
           </svg>
           <span className="font-bold text-xl">NextShip</span>
         </Link>

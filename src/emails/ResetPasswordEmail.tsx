@@ -11,7 +11,6 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import * as React from "react";
 
 interface ResetPasswordEmailProps {
   username?: string;
@@ -30,8 +29,8 @@ export const ResetPasswordEmail = ({
         <Heading style={h1}>Password Reset Request</Heading>
         <Text style={text}>Hi {username},</Text>
         <Text style={text}>
-          We received a request to reset your password. Click the button below to
-          create a new password:
+          We received a request to reset your password. Click the button below
+          to create a new password:
         </Text>
         <Section style={buttonContainer}>
           <Button style={button} href={resetLink}>
@@ -39,8 +38,8 @@ export const ResetPasswordEmail = ({
           </Button>
         </Section>
         <Text style={text}>
-          If you didn't request a password reset, you can safely ignore this email.
-          Your password will remain unchanged.
+          If you didn't request a password reset, you can safely ignore this
+          email. Your password will remain unchanged.
         </Text>
         <Text style={text}>
           This link will expire in 24 hours for security reasons.

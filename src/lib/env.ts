@@ -2,15 +2,23 @@ import { z } from "zod";
 
 const envSchema = z.object({
   // Next.js
-  NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
+  NODE_ENV: z
+    .enum(["development", "production", "test"])
+    .default("development"),
 
   // Supabase
-  NEXT_PUBLIC_SUPABASE_URL: z.string().url().min(1),
+  NEXT_PUBLIC_SUPABASE_URL: z
+    .string()
+    .regex(/^https?:\/\/.+/)
+    .min(1),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1).optional(),
 
   // Database
-  DATABASE_URL: z.string().url().optional(),
+  DATABASE_URL: z
+    .string()
+    .regex(/^https?:\/\/.+/)
+    .optional(),
 
   // Stripe
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().startsWith("pk_").optional(),
@@ -30,7 +38,10 @@ const envSchema = z.object({
   ARCJET_KEY: z.string().startsWith("ajkey_").optional(),
 
   // URLs
-  NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
+  NEXT_PUBLIC_SITE_URL: z
+    .string()
+    .regex(/^https?:\/\/.+/)
+    .default("http://localhost:3000"),
 });
 
 export type Env = z.infer<typeof envSchema>;
@@ -44,7 +55,7 @@ export function validateEnv(): Env {
 
   if (!parsed.success) {
     console.error("❌ Invalid environment variables:");
-    console.error(JSON.stringify(parsed.error.format(), null, 2));
+    console.error(JSON.stringify(parsed.error.issues, null, 2));
     throw new Error("Invalid environment variables");
   }
 

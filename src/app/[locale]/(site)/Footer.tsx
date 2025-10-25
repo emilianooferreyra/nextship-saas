@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { Github, Mail } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import XIcon from "@/components/icons/XIcon";
 
 export default function Footer() {

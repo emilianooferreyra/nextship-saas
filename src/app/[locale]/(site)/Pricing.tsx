@@ -1,10 +1,10 @@
 "use client";
 
-import type React from "react";
-import { useTranslations } from "next-intl";
-import { Check, Heart, Coffee } from "lucide-react";
-import Link from "next/link";
 import { motion, useInView } from "framer-motion";
+import { Check, Coffee, Heart } from "lucide-react";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import type React from "react";
 import { useRef } from "react";
 
 export default function PricingSection() {

@@ -1,12 +1,12 @@
+import { setRequestLocale } from "next-intl/server";
 import CTA from "./(site)/Cta";
 import FAQ from "./(site)/Faq";
+import FeaturesSection from "./(site)/FeaturesSection";
 import Footer from "./(site)/Footer";
 import HeroSection from "./(site)/Hero";
-import FeaturesSection from "./(site)/FeaturesSection";
 import Navbar from "./(site)/Navbar";
-import TechStack from "./(site)/TechStack";
 import PricingSection from "./(site)/Pricing";
-import { setRequestLocale } from "next-intl/server";
+import TechStack from "./(site)/TechStack";
 
 export default async function Home({
   params,

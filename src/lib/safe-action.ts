@@ -1,6 +1,9 @@
-import { createSafeActionClient, DEFAULT_SERVER_ERROR_MESSAGE } from "next-safe-action";
-import { createClient } from "@/lib/supabase/server";
 import type { User } from "@supabase/supabase-js";
+import {
+  createSafeActionClient,
+  DEFAULT_SERVER_ERROR_MESSAGE,
+} from "next-safe-action";
+import { createClient } from "@/lib/supabase/server";
 
 /**
  * Base action client with CSRF protection
@@ -53,7 +56,7 @@ export const authActionClient = actionClient.use(async ({ next }) => {
       user: user as User,
       supabase,
       userId: user.id,
-    }
+    },
   });
 });
 

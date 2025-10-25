@@ -1,8 +1,8 @@
 import arcjet, {
   detectBot,
+  fixedWindow,
   shield,
   tokenBucket,
-  fixedWindow,
   validateEmail,
 } from "@arcjet/next";
 

@@ -1,7 +1,4 @@
-import crypto from "crypto";
-import { NextResponse, NextRequest } from "next/server";
-import { sendEmail } from "@/lib/resend";
-import { config } from "@/config";
+import { NextRequest, NextResponse } from "next/server";
 
 /**
  * Webhook endpoint for Resend email events

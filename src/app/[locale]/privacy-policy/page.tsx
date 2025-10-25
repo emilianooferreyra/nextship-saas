@@ -1,7 +1,7 @@
-import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 import { Metadata } from "next";
-import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - NextShip",

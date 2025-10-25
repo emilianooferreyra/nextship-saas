@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { HelpCircle, Mail } from "lucide-react";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useRef, useState } from "react";
 import XIcon from "@/components/icons/XIcon";
 
 interface FAQItem {

@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { Github, Sparkles } from "lucide-react";
-import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { Github, Sparkles } from "lucide-react";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { SimpleBento } from "@/components/simple-bento";
 
 const HeroSection = () => {
