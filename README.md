@@ -1,14 +1,15 @@
 # ⚡ NextShip SaaS
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
-[![Tests](https://img.shields.io/badge/tests-11%20passing-green)](./TESTING.md)
+[![Tests](https://img.shields.io/badge/tests-23%20passing-green)](./TESTING.md)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![pnpm](https://img.shields.io/badge/pnpm-9-orange)](https://pnpm.io/)
+[![Biome](https://img.shields.io/badge/Biome-2.3-60a5fa)](https://biomejs.dev/)
 
 Hi there! 👋
 
-NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to accelerate your SaaS development. Built with cutting-edge technologies including Next.js 15, Supabase, Stripe, LemonSqueezy, Arcjet security, Resend email, and full internationalization support.
+NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to accelerate your SaaS development. Built with cutting-edge technologies including Next.js 16, Supabase, Stripe, LemonSqueezy, Arcjet security, Resend email, Biome linting, and full internationalization support.
 
 ## ✨ Features
 
@@ -17,12 +18,14 @@ NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to acceler
 - 💳 **Payment Processing**: Stripe and LemonSqueezy integration with webhooks
 - 📧 **Email Integration**: Resend with React Email templates
 - 🛡️ **Enhanced Security**: Arcjet rate limiting, bot protection, and CSRF protection
-- 🧪 **Testing**: Vitest setup with 11 passing tests
+- 🧪 **Testing**: Vitest setup with 23 passing tests
+- ⚡ **Biome**: Ultra-fast linting and formatting (10-100x faster than ESLint)
+- 🪝 **Pre-commit Hooks**: Automated code quality checks with Husky
 - 🎛️ **Advanced Dashboard**: Modern UI with comprehensive components
 - 🎨 **Modern UI**: Tailwind CSS v4 with Radix UI components
 - 🐳 **Docker Ready**: Complete dev/prod Docker configuration
 - 📱 **Responsive Design**: Mobile-first approach
-- 🚀 **Performance Optimized**: Next.js 15 with Server Components and modern practices
+- 🚀 **Performance Optimized**: Next.js 16 with Turbopack and Server Components
 
 ## 🚀 Quick Start
 
@@ -67,6 +70,30 @@ NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to acceler
 
 5. **Open your browser**
    Navigate to `http://localhost:3000`
+
+## 📜 Available Scripts
+
+```bash
+# Development
+pnpm dev              # Start development server
+pnpm build            # Build for production
+pnpm start            # Start production server
+
+# Code Quality (Biome)
+pnpm lint             # Run linter
+pnpm lint:fix         # Run linter and auto-fix issues
+pnpm format           # Format code
+pnpm format:check     # Check code formatting
+pnpm check            # Run lint + format + organize imports
+pnpm check:fix        # Fix all issues automatically
+
+# Testing
+pnpm test             # Run tests in watch mode
+pnpm test:ui          # Run tests with UI
+pnpm test:coverage    # Run tests with coverage
+```
+
+**Note:** Pre-commit hooks will automatically run `biome check` on staged files before each commit.
 
 ## 🧪 Testing
 
@@ -227,16 +254,18 @@ Portainer is included in both development and production setups.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15.5.4
-- **Language**: TypeScript 5
+- **Framework**: Next.js 16.0.0
+- **Language**: TypeScript 5.9.3
 - **Database**: PostgreSQL (Supabase)
-- **ORM**: Drizzle ORM 0.39.3
-- **Auth**: Supabase Auth
-- **Payments**: Stripe 17.6.0, LemonSqueezy
-- **Email**: Resend 6.1.2 with React Email
+- **ORM**: Drizzle ORM 0.44.7
+- **Auth**: Supabase Auth 0.7.0
+- **Payments**: Stripe 19.1.0, LemonSqueezy
+- **Email**: Resend 6.2.2 with React Email 4.3.2
 - **Security**: Arcjet 1.0.0-beta.13
-- **Styling**: Tailwind CSS 4, Radix UI
-- **Testing**: Vitest 3.2.4
+- **Styling**: Tailwind CSS 4.1.16, Radix UI
+- **Linting/Formatting**: Biome 2.3.0
+- **Testing**: Vitest 4.0.3
+- **Git Hooks**: Husky 9.1.7 + lint-staged 16.2.6
 - **Package Manager**: pnpm 9.15.3
 - **Node**: >= 20.0.0
 
@@ -261,10 +290,13 @@ Built with ❤️ by [emilianooferreyra](https://github.com/emilianooferreyra)
 
 Based on [ShipFree](https://github.com/shipfree/shipfree) template with significant improvements:
 
+- 🚀 Next.js 16 with Turbopack
+- ⚡ Biome linting (10-100x faster than ESLint)
+- 🪝 Pre-commit hooks for code quality
 - ✨ Resend + React Email integration
-- 🧪 Complete testing setup with Vitest
+- 🧪 Complete testing setup with 23 tests
 - 🔒 Enhanced security features
-- 🌐 Full i18n support
+- 🌐 Full i18n support (3 languages)
 - 🐳 Docker dev/prod environments
 - 📝 Comprehensive documentation
 

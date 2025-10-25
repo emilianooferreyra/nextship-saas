@@ -30,9 +30,8 @@ const envSchema = z.object({
   LEMONSQUEEZY_STORE_ID: z.string().optional(),
   LEMONSQUEEZY_WEBHOOK_SECRET: z.string().optional(),
 
-  // Mailgun
-  MAILGUN_API_KEY: z.string().optional(),
-  MAILGUN_DOMAIN: z.string().optional(),
+  // Resend (Email Service)
+  RESEND_API_KEY: z.string().startsWith("re_").optional(),
 
   // Arcjet
   ARCJET_KEY: z.string().startsWith("ajkey_").optional(),

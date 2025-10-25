@@ -16,6 +16,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - New commands: `pnpm check`, `pnpm check:fix`, `pnpm lint:fix`
   - Automatic import organization
   - Configuration in `biome.json`
+- 🪝 **Pre-commit hooks** - Automated code quality
+  - Husky 9.1.7 for git hooks management
+  - lint-staged 16.2.6 for running tasks on staged files
+  - Automatic Biome checks before every commit
+  - Configuration in `.lintstagedrc.js`
+- 🧪 **Enhanced testing suite**
+  - Added Navbar component tests (6 tests)
+  - Added FAQ component tests (6 tests)
+  - Fixed Resend email service tests
+  - Total: 23 passing tests (up from 11)
+- 📝 **Improved documentation**
+  - Updated README with Next.js 16 info
+  - Added "Available Scripts" section
+  - Updated Tech Stack with current versions
+  - Added Biome and pre-commit hooks documentation
 
 ### Changed
 
@@ -37,6 +52,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - typescript: 5.7.3 → 5.9.3
   - vitest: 3.2.4 → 4.0.3
 - 📝 Updated package.json scripts for Biome
+- 🧹 Cleaned up legacy code references
+
+### Fixed
+
+- 🔧 **Environment variables** - Added proper Resend validation
+  - Added `RESEND_API_KEY` validation to `env.ts`
+  - Removed legacy Mailgun environment variables
+- 📦 **Type definitions** - Updated config types
+  - Changed `MailgunConfig` → `ResendConfig` in `types/config.ts`
+  - Removed `subdomain` field (Mailgun-specific)
+- 🧪 **Test files** - Renamed for clarity
+  - Renamed `resend.test.ts` → `email.test.ts` (more generic)
+  - Fixed mock implementation for Resend constructor
 
 ### Removed
 
