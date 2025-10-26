@@ -11,7 +11,7 @@ const intlMiddleware = createMiddleware({
   localeDetection: true, // Enable automatic locale detection from Accept-Language header
 });
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip i18n for API, auth, and dashboard routes
