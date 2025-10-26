@@ -3,7 +3,6 @@ import createMiddleware from "next-intl/middleware";
 import { defaultLocale, locales } from "@/i18n";
 import { updateSession } from "@/lib/supabase/middleware";
 
-// Crear middleware de next-intl para rutas localizadas
 const intlMiddleware = createMiddleware({
   locales,
   defaultLocale,

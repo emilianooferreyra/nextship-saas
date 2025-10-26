@@ -42,4 +42,3 @@ next-env.d.ts
 
 #drizzle 
 /drizzle
-src/app/globals.css
