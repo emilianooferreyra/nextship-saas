@@ -14,18 +14,70 @@ NextShip SaaS is a modern, comprehensive Next.js boilerplate designed to acceler
 ## ✨ Features
 
 - 🌐 **Internationalization**: Full i18n support (English, Spanish, Portuguese)
-- 🔐 **Authentication**: Supabase with email/password, magic links, and OAuth
-- 💳 **Payment Processing**: Stripe and LemonSqueezy integration with webhooks
-- 📧 **Email Integration**: Resend with React Email templates
-- 🛡️ **Enhanced Security**: Arcjet rate limiting, bot protection, and CSRF protection
-- 🧪 **Testing**: Vitest setup with 23 passing tests
+- 🔐 **Authentication**: Supabase with email/password authentication
+- 💳 **Payment Processing**: Stripe and LemonSqueezy webhook integration
+- 📧 **Email Infrastructure**: Resend + React Email ready for transactional emails
+- 🛡️ **Enhanced Security**: Arcjet rate limiting, bot protection, and secure headers (HSTS, X-Frame-Options)
+- 🧪 **Testing**: Vitest setup with 23 passing tests and coverage reports
 - ⚡ **Biome**: Ultra-fast linting and formatting (10-100x faster than ESLint)
-- 🪝 **Pre-commit Hooks**: Automated code quality checks with Husky
+- 🪝 **Pre-commit Hooks**: Automated code quality checks with Husky + lint-staged
 - 🎛️ **Advanced Dashboard**: Modern UI with comprehensive components
-- 🎨 **Modern UI**: Tailwind CSS v4 with Radix UI components
-- 🐳 **Docker Ready**: Complete dev/prod Docker configuration
+- 🎨 **Modern UI**: Tailwind CSS v4 with shadcn/ui components (Radix UI)
+- 🗄️ **Database**: PostgreSQL with Drizzle ORM for type-safe queries
+- 🔍 **SEO Optimized**: Dynamic sitemap, robots.txt, Open Graph, Twitter Cards, and JSON-LD
+- 🐳 **Docker Ready**: Complete dev/prod Docker configuration with Portainer
 - 📱 **Responsive Design**: Mobile-first approach
-- 🚀 **Performance Optimized**: Next.js 16 with Turbopack and Server Components
+- 🚀 **Performance**: Next.js 16 with Turbopack and React 19 Server Components
+
+## 🔮 Future Enhancements
+
+NextShip provides a solid foundation, and these features can be added based on your needs:
+
+### 🔐 Authentication & Security
+- OAuth providers (Google, GitHub, Microsoft, etc.)
+- Magic link authentication
+- Email verification flow
+- Content Security Policy (CSP) headers
+- CSRF protection with Double Submit Cookie pattern
+
+### 🎨 UI/UX
+- Dark mode with system preference detection
+- Theme customization system
+- Additional shadcn/ui components
+- Animated page transitions
+
+### 📧 Email System
+- Pre-built email templates (welcome, password reset, notifications)
+- Newsletter subscription management
+- Email analytics and tracking
+
+### 💳 Payments & Billing
+- Invoice generation (PDF)
+- Subscription management dashboard
+- Usage-based billing
+- Multi-currency support
+- Payment method management
+
+### 🗄️ Database
+- Database migration system with Drizzle Kit
+- Row Level Security (RLS) policies
+- Real-time subscriptions with Supabase
+- Database indexing optimization
+- Seed data scripts
+
+### 📊 Analytics & Monitoring
+- User analytics integration
+- Error tracking (Sentry)
+- Performance monitoring
+- Webhook event logging
+
+### 🚀 DevOps
+- CI/CD pipelines
+- Database backup automation
+- Multi-environment setup (staging, production)
+- Health check endpoints
+
+**Want these features?** Consider contributing to NextShip or hire us to implement them! 💼
 
 ## 🚀 Quick Start
 
@@ -117,31 +169,46 @@ pnpm test:coverage
 
 ## 📧 Email Setup (Resend)
 
-NextShip uses [Resend](https://resend.com) with React Email for beautiful, responsive email templates.
+NextShip includes [Resend](https://resend.com) and React Email infrastructure for sending transactional emails.
 
 1. **Get your API key** from [resend.com/api-keys](https://resend.com/api-keys)
 2. **Add to `.env`**
    ```bash
    RESEND_API_KEY=re_xxx
    ```
-3. **Use pre-built templates**
+3. **Create your email templates**
+
+   Create React Email components in `src/emails/`:
 
    ```typescript
-   import { sendEmail } from "@/lib/resend";
-   import { WelcomeEmail } from "@/emails";
+   // src/emails/welcome.tsx
+   import { Html, Button } from "@react-email/components";
 
-   await sendEmail({
+   export const WelcomeEmail = ({ name }: { name: string }) => (
+     <Html>
+       <h1>Welcome, {name}!</h1>
+       <Button href="https://yourapp.com">Get Started</Button>
+     </Html>
+   );
+   ```
+
+4. **Send emails**
+
+   ```typescript
+   import { Resend } from "resend";
+   import { WelcomeEmail } from "@/emails/welcome";
+
+   const resend = new Resend(process.env.RESEND_API_KEY);
+
+   await resend.emails.send({
+     from: "noreply@yourdomain.com",
      to: "user@example.com",
      subject: "Welcome to NextShip!",
-     react: <WelcomeEmail username="John" />,
+     react: <WelcomeEmail name="John" />,
    });
    ```
 
-**Available templates:**
-
-- `WelcomeEmail` - New user welcome
-- `ResetPasswordEmail` - Password reset flow
-- `NotificationEmail` - General notifications
+**Note:** Pre-built email templates are available as a Future Enhancement. Build your own using [React Email](https://react.email)!
 
 ## 🔐 Environment Variables
 

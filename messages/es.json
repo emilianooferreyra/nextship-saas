@@ -15,7 +15,7 @@
     "enterpriseSecurity": "Seguridad Empresarial",
     "stack": {
       "nextjs": {
-        "title": "Next.js 15",
+        "title": "Next.js 16",
         "subtitle": "App Router y Server Components"
       },
       "typescript": {
@@ -60,7 +60,7 @@
       "paymentProcessing": "Procesamiento de Pagos",
       "supabaseAuth": "Autenticación Supabase",
       "databaseOrm": "Base de Datos y ORM",
-      "nextjsReact": "Next.js 15 y React 19",
+      "nextjsReact": "Next.js 16 y React 19",
       "modernDesign": "Sistema de Diseño Moderno",
       "seoMarketing": "Herramientas SEO y Marketing",
       "emailIntegration": "Integración de Email"
@@ -70,35 +70,39 @@
     "lists": {
       "security": [
         "Rate limiting y protección contra bots con Arcjet",
-        "Protección CSRF con patrón Double Submit Cookie",
-        "Headers seguros (CSP, HSTS, X-Frame-Options)",
+        "Headers seguros (HSTS, X-Frame-Options)",
         "Validación de entrada con schemas Zod",
         "Validación de variables de entorno",
-        "Protección contra SQL injection con Drizzle ORM"
+        "Protección contra SQL injection con Drizzle ORM",
+        "Protección CSRF (Próximamente)",
+        "Headers Content Security Policy (Próximamente)"
       ],
       "payments": [
         "Integración Stripe con manejo de webhooks",
         "Soporte LemonSqueezy para pagos simplificados",
-        "Gestión de suscripciones",
         "Verificación de firma de webhooks",
-        "Seguimiento de estado de pagos",
-        "Generación automática de facturas"
+        "Listo para gestión de suscripciones",
+        "Seguimiento de estado de pagos (Próximamente)",
+        "Generación automática de facturas (Próximamente)"
       ],
       "authentication": [
         "Autenticación con email/contraseña",
-        "Autenticación con magic link",
-        "Proveedores OAuth (Google, GitHub, etc.)",
         "Rutas protegidas con middleware",
-        "Gestión de sesiones",
-        "Flujo de verificación de email"
+        "Gestión de sesiones con Supabase",
+        "Listo para integración con Supabase Auth",
+        "Autenticación con magic link (Próximamente)",
+        "Proveedores OAuth - Google, GitHub (Próximamente)",
+        "Flujo de verificación de email (Próximamente)"
       ],
       "database": [
         "PostgreSQL con Supabase",
         "Drizzle ORM para queries type-safe",
-        "Migraciones de base de datos",
-        "Row Level Security (RLS)",
-        "Suscripciones en tiempo real",
-        "Indexación optimizada"
+        "Configuración básica de schema",
+        "Listo para migraciones de base de datos",
+        "Migraciones con Drizzle Kit (Próximamente)",
+        "Políticas Row Level Security (Próximamente)",
+        "Suscripciones en tiempo real (Próximamente)",
+        "Indexación optimizada (Próximamente)"
       ],
       "performance": [
         "Server Components por defecto",
@@ -110,11 +114,11 @@
       ],
       "uiux": [
         "Librería de componentes shadcn/ui",
-        "Tailwind CSS para estilos",
-        "Soporte para modo oscuro",
+        "Tailwind CSS v4 para estilos",
         "Diseño responsive",
-        "Componentes accesibles",
-        "Iconos Lucide"
+        "Componentes accesibles (Radix UI)",
+        "Iconos Lucide",
+        "Soporte para modo oscuro (Próximamente)"
       ],
       "seo": [
         "Implementación de Metadata API",
@@ -126,17 +130,19 @@
       ],
       "email": [
         "Integración con Resend y React Email",
-        "Templates de emails transaccionales",
-        "Verificación de email",
-        "Emails de recuperación de contraseña",
-        "Emails de bienvenida",
-        "Soporte para newsletter"
+        "Infraestructura de email lista",
+        "Creá tus propios templates de email",
+        "Templates de emails transaccionales (Próximamente)",
+        "Verificación de email (Próximamente)",
+        "Emails de recuperación de contraseña (Próximamente)",
+        "Emails de bienvenida (Próximamente)",
+        "Soporte para newsletter (Próximamente)"
       ]
     },
     "bottom": {
       "totalTimeSaved": "Tiempo total ahorrado: más de 200 horas",
       "typescript": "100% TypeScript",
-      "eslint": "ESLint configurado",
+      "eslint": "Linting con Biome",
       "productionReady": "Listo para producción",
       "mitLicensed": "Licencia MIT"
     }
@@ -155,7 +161,7 @@
     },
     "technologies": {
       "nextjs": {
-        "name": "Next.js 15",
+        "name": "Next.js 16",
         "description": "Framework React con App Router, Server Components y Server Actions"
       },
       "react": {

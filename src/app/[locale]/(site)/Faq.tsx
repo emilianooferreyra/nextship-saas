@@ -75,6 +75,7 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div key={index} className="overflow-hidden">
               <button
+                type="button"
                 onClick={() => toggleQuestion(index)}
                 className="flex w-full items-center justify-between bg-card border border-border px-6 py-4 text-left transition-colors hover:bg-card/80 hover:border-primary/50"
               >

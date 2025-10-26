@@ -15,7 +15,7 @@
     "enterpriseSecurity": "Enterprise Security",
     "stack": {
       "nextjs": {
-        "title": "Next.js 15",
+        "title": "Next.js 16",
         "subtitle": "App Router & Server Components"
       },
       "typescript": {
@@ -60,7 +60,7 @@
       "paymentProcessing": "Payment Processing",
       "supabaseAuth": "Supabase Authentication",
       "databaseOrm": "Database & ORM",
-      "nextjsReact": "Next.js 15 & React 19",
+      "nextjsReact": "Next.js 16 & React 19",
       "modernDesign": "Modern Design System",
       "seoMarketing": "SEO & Marketing Tools",
       "emailIntegration": "Email Integration"
@@ -70,35 +70,39 @@
     "lists": {
       "security": [
         "Arcjet rate limiting and bot protection",
-        "CSRF protection with Double Submit Cookie pattern",
-        "Secure headers (CSP, HSTS, X-Frame-Options)",
+        "Secure headers (HSTS, X-Frame-Options)",
         "Input validation with Zod schemas",
         "Environment variable validation",
-        "SQL injection protection with Drizzle ORM"
+        "SQL injection protection with Drizzle ORM",
+        "CSRF protection (Coming Soon)",
+        "Content Security Policy headers (Coming Soon)"
       ],
       "payments": [
         "Stripe integration with webhook handling",
         "LemonSqueezy support for simplified payments",
-        "Subscription management",
         "Webhook signature verification",
-        "Payment status tracking",
-        "Automated invoice generation"
+        "Ready for subscription management",
+        "Payment status tracking (Coming Soon)",
+        "Automated invoice generation (Coming Soon)"
       ],
       "authentication": [
         "Email/password authentication",
-        "Magic link authentication",
-        "OAuth providers (Google, GitHub, etc.)",
         "Protected routes with middleware",
-        "Session management",
-        "Email verification flow"
+        "Session management with Supabase",
+        "Ready for Supabase Auth integration",
+        "Magic link authentication (Coming Soon)",
+        "OAuth providers - Google, GitHub (Coming Soon)",
+        "Email verification flow (Coming Soon)"
       ],
       "database": [
         "PostgreSQL with Supabase",
         "Drizzle ORM for type-safe queries",
-        "Database migrations",
-        "Row Level Security (RLS)",
-        "Real-time subscriptions",
-        "Optimized indexing"
+        "Basic schema configuration",
+        "Ready for database migrations",
+        "Database migrations with Drizzle Kit (Coming Soon)",
+        "Row Level Security policies (Coming Soon)",
+        "Real-time subscriptions (Coming Soon)",
+        "Optimized indexing (Coming Soon)"
       ],
       "performance": [
         "Server Components by default",
@@ -110,11 +114,11 @@
       ],
       "uiux": [
         "shadcn/ui component library",
-        "Tailwind CSS for styling",
-        "Dark mode support",
+        "Tailwind CSS v4 for styling",
         "Responsive design",
-        "Accessible components",
-        "Lucide icons"
+        "Accessible components (Radix UI)",
+        "Lucide icons",
+        "Dark mode support (Coming Soon)"
       ],
       "seo": [
         "Metadata API implementation",
@@ -126,17 +130,19 @@
       ],
       "email": [
         "Resend integration with React Email",
-        "Transactional email templates",
-        "Email verification",
-        "Password reset emails",
-        "Welcome emails",
-        "Newsletter support"
+        "Email infrastructure ready",
+        "Create your own email templates",
+        "Transactional email templates (Coming Soon)",
+        "Email verification (Coming Soon)",
+        "Password reset emails (Coming Soon)",
+        "Welcome emails (Coming Soon)",
+        "Newsletter support (Coming Soon)"
       ]
     },
     "bottom": {
       "totalTimeSaved": "Total time saved: 200+ hours",
       "typescript": "100% TypeScript",
-      "eslint": "ESLint configured",
+      "eslint": "Biome linting",
       "productionReady": "Production ready",
       "mitLicensed": "MIT licensed"
     }
@@ -155,7 +161,7 @@
     },
     "technologies": {
       "nextjs": {
-        "name": "Next.js 15",
+        "name": "Next.js 16",
         "description": "React framework with App Router, Server Components, and Server Actions"
       },
       "react": {
